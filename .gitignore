@@ -1,0 +1,19 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Uploaded user content; keep the Apache protection rules
+/uploads/*
+!/uploads/.htaccess
+
+# Local logs and operating-system files
+*.log
+*.pid
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.idea/
+.vscode/

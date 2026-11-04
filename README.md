@@ -48,3 +48,9 @@ Bootstrap and Chart.js are included locally in `assets/vendor`, with their licen
 - Recovered-item status, notification center, and activity log
 - Admin dashboard, report moderation, account access and role management, and editable categories and locations
 - Prepared SQL statements, output escaping, CSRF tokens, and server-side validation
+
+## Before publishing or deploying
+
+- The repository does not include a `LICENSE`. Choose a license before redistributing this project; the licenses for the bundled Bootstrap and Chart.js files are included beside those files.
+- Do not commit database dumps, real student information, credentials, or user-uploaded images. The `.gitignore` excludes local environment files and uploaded content while retaining `uploads/.htaccess`.
+- The one-click launcher uses PHP's built-in web server and is intended for local development only. Do not expose it to a public network. For a real deployment, use a properly configured web server with HTTPS, a dedicated database account, and server-side `CAMPUSFIND_DB_*` environment variables instead of development credentials.
