@@ -49,6 +49,10 @@ Bootstrap and Chart.js are included locally in `assets/vendor`, with their licen
 - Admin dashboard, report moderation, account access and role management, and editable categories and locations
 - Prepared SQL statements, output escaping, CSRF tokens, and server-side validation
 
+## Static front-end demo
+
+Open `front end/index.html` in a browser to preview the interface without PHP or a database. The demo reuses the app's local Bootstrap, Chart.js, and stylesheet assets. Its sample reports, filters, report form, and recovery actions run in the browser only; they do not connect to the CampusFind database or send data to a server.
+
 ## Before publishing or deploying
 
 - The repository does not include a `LICENSE`. Choose a license before redistributing this project; the licenses for the bundled Bootstrap and Chart.js files are included beside those files.

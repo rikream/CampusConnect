@@ -1,0 +1,38 @@
+.demo-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding: 11px 14px;
+    border: 1px solid #dce6fc;
+    border-radius: 9px;
+    color: #647594;
+    background: #f0f4ff;
+    font-size: 11px;
+    line-height: 1.5;
+}
+.demo-banner strong { flex: 0 0 auto; color: #4269c5; }
+.demo-hint { margin: 0; padding: 0 5px; color: #8290a6; font-size: 9px; }
+.filter-form { margin-bottom: 16px; padding: 17px; }
+.filter-primary { display: flex; align-items: center; gap: 10px; }
+.filter-primary .search-input { flex: 1; }
+.filter-primary select { width: auto; min-width: 150px; }
+.filter-primary .button { flex: 0 0 auto; }
+.suggestion-card { display: flex; align-items: center; gap: 13px; padding: 17px; border: 1px solid #dcecdf; border-radius: 12px; background: #f5fbf7; }
+.suggestion-icon { display: grid; flex: 0 0 auto; width: 35px; height: 35px; place-items: center; border-radius: 10px; color: #398463; background: #e4f4eb; }
+.suggestion-card > div { flex: 1; }
+.suggestion-card strong { color: #34425a; font-size: 12px; }
+.suggestion-card p { margin: 5px 0 0; color: #7d899b; font-size: 10px; line-height: 1.5; }
+.static-page[hidden] { display: none !important; }
+.empty-state { grid-column: 1 / -1; }
+
+@media (max-width: 760px) {
+    .demo-banner { align-items: flex-start; flex-direction: column; gap: 3px; margin-bottom: 18px; }
+    .filter-primary { flex-wrap: wrap; }
+    .filter-primary .search-input { flex-basis: 100%; }
+    .filter-primary select { flex: 1; min-width: 0; }
+}
+@media (max-width: 480px) {
+    .suggestion-card { align-items: flex-start; flex-wrap: wrap; }
+    .suggestion-card .text-link { margin-left: 48px; }
+}
